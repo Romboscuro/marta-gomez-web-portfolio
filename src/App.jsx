@@ -16,9 +16,9 @@ function App() {
       <Header/>
       <Bar/>
       <Routes>
-        <Route path="/" element={<AboutMe />} />
-        <Route path="projects" element={<Projects />} />
-        <Route path="skills" element={<Skills />} />
+        <Route path="marta-gomez-web-portfolio/" element={<AboutMe />} />
+        <Route path="marta-gomez-web-portfolio/projects" element={<Projects />} />
+        <Route path="marta-gomez-web-portfolio/skills" element={<Skills />} />
       </Routes>
     </BrowserRouter>
   )
