@@ -1,0 +1,21 @@
+[{
+  "name": "CozyCat",
+  "description": "CozyCat es una tienda online ficticia creada con WordPress, Elementor y Woocomerce. Está centrada en la venta de objetos para gatos, como muebles, juguetes, comida, etc. Al estar el proyecto en local, se presenta como alternativa para verlo un vídeo explorando la web al completo.",
+  "multimediaSrc": "assets/cozyCat.mp4",
+  "multimediaType": "video",
+  "detailsLink": ""
+},
+{
+  "name": "App Incidencias",
+  "description": "Una sencilla aplicación desarrollada con Ionic y Angular durante mis estudios, la cual permite gestionar partes de clientes en una empresa. La aplicación permite ver los datos de los clientes y resolver sus partes. Aunque en su día la aplicación se porteó a Android, solo queda un vídeo mostrando funcionalidades de la app en ordenador.",
+  "multimediaSrc": "assets/ionic.mp4",
+  "multimediaType": "video",
+  "detailsLink": ""
+},
+{
+  "name": "Portfolio",
+  "description": "Con el fin de afianzar mis conocimientos fuera de la universidad, he creado este portfolio desde cero donde muestro mi información, experiencia, proyectos y habilidades. La web ha sido maquetada usando Canva y Photoshop; y la página ha sido desarrollada con React. La interfaz es sencilla y presenta un diseño accesible y adaptable a móvil.",
+  "multimediaSrc": "assets/webPortfolio.png",
+  "multimediaType": "image",
+  "detailsLink": ""
+}]
