@@ -1,0 +1,215 @@
+.skills-wrapper {
+  display: grid;
+  grid-template-columns: 15% 70% 15%;
+  justify-items: center;
+}
+
+.skills-container {
+  grid-column-start: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3em 5em 5em 5em;
+  margin-bottom: 7em;
+  border: 2px dashed var(--secondary-color-op);
+  border-top: none;
+  background-color: var(--tertiary-color);
+}
+
+.general-title {
+  border-bottom: 1px dashed var(--text-color);
+}
+
+.general-title svg {
+  padding: 0 0.3em;
+}
+
+/* HARD SKILLS */
+.hard-skills-table {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 65% 35%;
+  justify-items: center;
+  margin: 2em 0 5em 0;
+  background-color: var(--primary-color-op);
+}
+
+.hard-skills-table-column {
+  width: 100%;
+  text-align: center;
+}
+
+.hard-skills-table-column-expanded {
+  width: 100%;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  text-align: center;
+}
+
+.hard-skills-table-column .general-subtitle,
+.hard-skills-table-column-expanded .general-subtitle {
+  margin: 0;
+  padding: 1em 0;
+  background-color: var(--secondary-color-op);
+}
+
+
+.hard-skills-table-column .hard-skills-table-cell {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  padding: 1em 0 2em 0;
+}
+
+.hard-skills-table-column-expanded .hard-skills-table-cell {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  padding: 1em 0 2em 0;
+}
+
+.hard-skills-table-column .hard-skills-table-cell > p,
+.hard-skills-table-column-expanded .hard-skills-table-cell > p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: var(--general-text-font-size);
+}
+
+.hard-skills-table-cell img {
+  height: 2.6em;
+  margin-bottom: 0.5em;
+  filter: opacity(82%);
+  transition: transform 0.3s ease;
+}
+
+.hard-skills-table-cell img:hover {
+  transform: scale(1.1) rotate(-5deg);
+}
+
+.line-left {
+  border-right: 2px dashed var(--secondary-color);
+}
+
+.small-column {
+  grid-template-columns: repeat(2, 1fr) !important;
+}
+
+/* SEPARATOR */
+.skill-separator {
+  color: var(--text-color);
+  margin-bottom: 4.5em;
+}
+
+/* SOFT SKILLS */
+.title-line{
+  width: 100%;
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 0.5em;
+}
+
+.soft-skills-table {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 1em;
+  text-align: center;
+  padding-top: 2em;
+  margin-bottom: 3em;
+}
+
+.soft-skills-table > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.soft-skills-table .general-subtitle {
+  height: 25%;
+  margin: 0 auto;
+  padding: 0.2em;
+}
+
+.soft-skills-table img {
+  height: 5em;
+  filter: opacity(82%);
+}
+
+.soft-skill-desc {
+  width: 90%;
+}
+
+/* ------ MEDIA QUERYS ------ */
+@media screen and (max-width: 1200px) {
+  .skills-wrapper {
+    grid-template-columns: 7.5% 85% 7.5%;
+  }
+
+  .skills-container {
+    padding: 3em 2em 5em 2em;
+  }
+
+  .hard-skills-table-column .hard-skills-table-cell > p, 
+  .hard-skills-table-column-expanded .hard-skills-table-cell > p {
+    font-size: 1em;
+  }
+
+  .soft-skills-table {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    row-gap: 2em;
+  }
+  
+  .soft-skills-table > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .soft-skills-table .general-subtitle {
+    width: 90%;
+  }
+  
+  .soft-skill-desc {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .skills-wrapper {
+    display: block;
+    margin-bottom: 0;
+    padding-bottom: 0.5em;
+  }
+
+  .skills-container {
+    padding: 3em 1.5em 5em 1.5em;
+  }
+
+  .hard-skills-table {
+    display: block;
+  }
+
+  .hard-skills-table-column .hard-skills-table-cell {
+    padding: 1em 0 1em 0;
+  }
+
+  .line-left {
+    border: none;
+  }
+
+  .soft-skills-table {
+    display: block;
+  }
+
+  .soft-skills-table > div {
+    margin-bottom: 2em;
+  }
+
+  .soft-skills-table .general-subtitle {
+    width: 80%;
+  }
+}

@@ -1,0 +1,93 @@
+.about-me-wrapper {
+  display: grid;
+  grid-template-columns: 15% 70% 15%;
+  justify-items: center;
+}
+
+.about-me-container {
+  grid-column-start: 2;
+  display: grid;
+  grid-template-rows: repeat(2, min-content);
+  row-gap: 1.5em;
+  background-color: var(--tertiary-color);
+  padding: 3em 5em 2em 5em;
+  margin-bottom: 5em;
+  border: 2px dashed var(--secondary-color-op);
+  border-top: none;
+}
+
+/* DESCRIPTION */
+.about-me-desc h2 {
+  font-size: var(--about-me-title-font-size);
+  margin-bottom: 0;
+}
+
+.about-me-desc-and-photo {
+  display: flex;
+  column-gap: 3.5em;
+  font-size: var(--general-text-font-size);
+}
+
+/* CV & RRSS */
+.about-me-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-me-contact .btn-primary {
+  margin-bottom: 0.1em;
+}
+
+.about-me-contact ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  column-gap: 1em;
+  font-size: var(--general-text-font-size);
+}
+
+.about-me-contact a:hover {
+  color: var(--text-hover-color);
+}
+
+/* ------ MEDIA QUERYS ------ */
+@media screen and (max-width: 1200px) {
+  .about-me-wrapper {
+      grid-template-columns: 10% 80% 10%;
+  }
+
+  .about-me-desc-and-photo {
+      flex-direction: column-reverse;
+      align-items: center;
+  }
+
+  .about-me-photo {
+    margin-bottom: 1em;
+  }
+
+  .about-me-desc .general-title {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .about-me-wrapper {
+    display: block;
+    padding-bottom: 5em;
+  }
+
+  .about-me-container {
+    padding-right: 0;
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+
+  .about-me-photo img {
+    width: 270px;
+  }
+
+  .about-me-desc {
+    padding: 0 2em;
+  }
+}

@@ -1,0 +1,33 @@
+:root {
+    --bg-color:#fff;
+    --primary-color: #a0e8f0;
+    --primary-color-op: #a0e8f098;
+    --secondary-color: #8ac5cc;
+    --secondary-color-op: #8ac5cc91;
+    --tertiary-color: #d7f9fde2;
+    --text-color: #333;
+    --text-color-op: #333333eb;
+    --text-hover-color: #000;
+    --text-hover-color-op: #0000005b;
+
+    --header-title-font-size: 3.5em;
+    --header-subtitle-font-size: 1.375em;
+    --bar-font-size: 1.25em;
+    --general-title-font-size: 2em;
+    --general-subtitle-font-size: 1.25em;
+    --about-me-title-font-size: 1.35em;
+    --general-text-font-size: 1.125em;
+    --btn-font-size: 1.125em;
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    --header-title-font-size: 2em;
+    --header-subtitle-font-size: 1.3em;
+    --bar-font-size: 1em;
+    --general-title-font-size: 1.75em;
+    --general-subtitle-font-size: 1.25em;
+    --about-me-title-font-size: 1.375em;
+    --general-text-font-size: 1em;
+  }
+}
