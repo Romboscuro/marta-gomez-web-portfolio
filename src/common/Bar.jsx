@@ -29,19 +29,19 @@ function changefocusedBarItem(path) {
           <ul>
             <li><Link 
                   className={focusedBarItem === "/" ? "focused-bar-item" : ""}
-                  to="/" 
+                  to="marta-gomez-web-portfolio/"
                   onClick={() => {changefocusedBarItem("/")}}
                 >Sobre mí</Link>
             </li>
             <li><Link
                   className={focusedBarItem === "proj" ? "focused-bar-item" : ""}
-                  to="/projects" 
+                  to="marta-gomez-web-portfolio/projects" 
                   onClick={() => {changefocusedBarItem("proj")}}
                 >Experiencia y Proyectos</Link>
             </li>
             <li><Link
                   className={focusedBarItem === "ski" ? "focused-bar-item" : ""}
-                  to="/skills" 
+                  to="marta-gomez-web-portfolio/skills" 
                   onClick={() => {changefocusedBarItem("ski")}}
                 >Skills</Link>
             </li>
@@ -63,19 +63,19 @@ function changefocusedBarItem(path) {
         <div className="sidebar-mobile-link-container">
           <Link 
             className={focusedBarItem === "/" ? "focused-bar-item" : ""}
-            to="/" 
+            to="marta-gomez-web-portfolio/" 
             onClick={() => {changefocusedBarItem("/"); closeSidebar()}}
           >Sobre mí
           </Link>
           <Link
             className={focusedBarItem === "proj" ? "focused-bar-item" : ""}
-            to="/projects" 
+            to="marta-gomez-web-portfolio/projects" 
             onClick={() => {changefocusedBarItem("proj"); closeSidebar()}}
           >Experiencia y Proyectos
           </Link>
           <Link
               className={focusedBarItem === "ski" ? "focused-bar-item" : ""}
-              to="/skills" 
+              to="marta-gomez-web-portfolio/skills" 
               onClick={() => {changefocusedBarItem("ski"); closeSidebar()}}
             >Skills
           </Link>
